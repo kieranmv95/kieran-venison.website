@@ -22,10 +22,10 @@ export default function Home() {
             <p className={styles.intro}>Hi I'm</p>
             <h1>KIERAN VENISON</h1>
             <p className={styles.description}>
-              I'm a self taught Developer based in Manchester, UK. I work
+              I&apos;m a self taught Developer based in Manchester, UK. I work
               building digital products for both businesses and consumer use.
-              I'm confident, naturally curious, and improving on my skills day
-              by day.
+              I&apos;m confident, naturally curious, and improving on my skills
+              day by day.
             </p>
 
             <div className={styles.companies}>
@@ -42,14 +42,14 @@ export default function Home() {
           <div className={styles.blockSpacing}>
             <h2>ABOUT</h2>
             <p>
-              I'm a self taught front end developer based in Manchester, UK. I
-              work building digital products for both businesses and consumer
-              use. I'm confident, naturally curious, and improving on my skills
-              day by day.
+              I&apos;m a self taught front end developer based in Manchester,
+              UK. I work building digital products for both businesses and
+              consumer use. I&apos;m confident, naturally curious, and improving
+              on my skills day by day.
             </p>
             <p>
               Outside of work life and parenting life I like to lift heavy and
-              play games. More specifically Olympic Lifting & CrossFit, I
+              play games. More specifically Olympic Lifting & CrossFit, but I
               promise I wont talk about CrossFit all the time. When it comes to
               games HMU for League of Legends and Cod any day of the week.
             </p>
