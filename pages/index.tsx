@@ -19,7 +19,7 @@ export default function Home() {
         <Header />
         <div className={styles.content}>
           <div>
-            <p className={styles.intro}>Hi I'm</p>
+            <p className={styles.intro}>Hi I&apos;m</p>
             <h1>KIERAN VENISON</h1>
             <p className={styles.description}>
               I&apos;m a self taught Developer based in Manchester, UK. I work
