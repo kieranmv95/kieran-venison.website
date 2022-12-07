@@ -65,7 +65,11 @@ export default function Home() {
               My mad ramblings about the world of web development, tech and
               other things I find vaguely interesting. I also cross post my blog
               posts to{" "}
-              <a href="https://dev.to/kieranmv95" target="_blank">
+              <a
+                href="https://dev.to/kieranmv95"
+                target="_blank"
+                rel="noreferrer"
+              >
                 dev.to
               </a>
             </p>
