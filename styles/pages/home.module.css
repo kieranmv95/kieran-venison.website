@@ -1,0 +1,88 @@
+.content {
+    height: calc(100vh - 5rem);
+    display: grid;
+    align-items: center;
+}
+
+@media only screen and (max-height: 36rem) {
+    .content {
+        height: 100%;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+}
+
+@media only screen and (min-width: 62rem) {
+    .content {
+        margin: 0 auto;
+        max-width: 40rem;
+    }
+}
+
+@media only screen and (max-height: 36rem) and (min-width: 62rem) {
+    .content {
+        height: 100%;
+        margin: 2rem auto 5rem auto;
+        max-width: 40rem;
+    }
+}
+
+@media only screen and (min-width: 75rem) {
+    .content {
+        margin: 0 auto;
+        max-width: 60rem;
+    }
+}
+
+@media only screen and (max-height: 36rem) and (min-width: 75rem) {
+    .content {
+        height: 100%;
+        margin: 2rem auto 5rem auto;
+        max-width: 60rem;
+    }
+}
+
+.intro {
+    color: var(--color-primary);
+    margin-bottom: .25rem;
+}
+
+.description {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 32rem;
+}
+
+.companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+@media only screen and (min-width: 48rem) {
+    .companies {
+        margin-top: 3rem;
+        gap: 2.5rem;
+    }   
+}
+
+.blockSpacing {
+    padding: 8rem 0;
+}
+
+@media only screen and (min-width: 75rem) {
+    .blockSpacing {
+        padding: 12rem 0;
+    }
+}
+
+.styledLink {
+    margin-top: 2rem;
+    display: inline-block;
+    text-decoration: none; 
+    border: 0.0625rem solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 1rem 2rem;
+}

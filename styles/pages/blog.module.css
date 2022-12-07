@@ -1,0 +1,15 @@
+.description {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 32rem;
+}
+
+.blockSpacing {
+    padding: 8rem 0;
+}
+
+@media only screen and (min-width: 75rem) {
+    .blockSpacing {
+        padding: 12rem 0;
+    }
+}

@@ -1,0 +1,22 @@
+.footer {
+    padding: 7rem 0 2rem 0;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons a {
+    opacity: .5;
+}
+
+.icons a:hover {
+    opacity: 1;
+}
+
+.icons a svg {
+    color: var(--color-copy);
+    width: 2rem;
+    height: 2rem;
+}
