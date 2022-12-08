@@ -1,9 +1,6 @@
 .nav ul {
     display: grid;
-}
-
-@media only screen and (min-width: 62rem) {
-    .nav ul {
+    @media only screen and (min-width: 62rem) {
         display: flex;
     }
 }
@@ -13,10 +10,9 @@
     text-decoration: none;
     display: block;
     padding: 1rem 1.5rem;
-}
-
-.link:hover {
-    text-decoration: underline;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .link span {

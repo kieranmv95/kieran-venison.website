@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Grid from "../components/Grid";
 import Header from "../components/Header";
 import Social from "../components/Social";
-import styles from "../styles/pages/home.module.css";
+import styles from "../styles/pages/home.module.scss";
 
 export default function Home() {
   return (

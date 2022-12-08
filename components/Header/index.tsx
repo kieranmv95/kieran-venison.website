@@ -3,7 +3,7 @@ import cx from "classnames";
 import { NavIcon } from "./NavIcon";
 import { Nav } from "./Nav";
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 import { Router } from "next/router";
 
 export const Header = () => {

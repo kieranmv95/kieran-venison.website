@@ -9,10 +9,9 @@
 
 .icons a {
     opacity: .5;
-}
-
-.icons a:hover {
-    opacity: 1;
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .icons a svg {

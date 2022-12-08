@@ -5,7 +5,7 @@ import {
   faInstagram,
   faDev,
 } from "@fortawesome/free-brands-svg-icons";
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 const Social = () => (
   <div className={styles.icons}>

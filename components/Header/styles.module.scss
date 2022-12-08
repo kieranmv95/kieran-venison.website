@@ -5,10 +5,7 @@
     height: 5rem;
     position: sticky;
     top: 0;
-}
-
-@media only screen and (min-width: 62rem) {
-    .header {
+    @media only screen and (min-width: 62rem) {
         display: grid;
     }
 }
@@ -25,17 +22,8 @@
     visibility: hidden;
     pointer-events: none;
     z-index: 998;
-}
 
-.navDisplayActive {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-    transition: opacity .2s;
-}
-
-@media only screen and (min-width: 62rem) {
-    .navDisplay {
+    @media only screen and (min-width: 62rem) {
         position: initial;
         top: initial;
         left: initial;
@@ -44,5 +32,14 @@
         height: auto;
         opacity: 1;
         padding: 0;
+        visibility: visible;
+        pointer-events: all;
+    }
+    
+    &Active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+        transition: opacity .2s;
     }
 }

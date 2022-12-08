@@ -6,7 +6,7 @@ import {
   faDev,
 } from "@fortawesome/free-brands-svg-icons";
 import Grid from "../Grid";
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 const Footer = () => (
   <footer className={styles.footer}>

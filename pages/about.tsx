@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Grid from "../components/Grid";
 import Header from "../components/Header";
 import Social from "../components/Social";
-import styles from "../styles/pages/about.module.css";
+import styles from "../styles/pages/about.module.scss";
 
 export default function About() {
   return (

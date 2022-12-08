@@ -3,8 +3,8 @@ import { Fira_Code } from "@next/font/google";
 import { config } from "@fortawesome/fontawesome-svg-core";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import "../styles/reset.css";
-import "../styles/globals.css";
+import "../styles/reset.scss";
+import "../styles/globals.scss";
 
 config.autoAddCss = false;
 

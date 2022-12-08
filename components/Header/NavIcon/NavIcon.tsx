@@ -1,5 +1,5 @@
 import cx from "classnames";
-import styles from "./navIcon.module.css";
+import styles from "./navIcon.module.scss";
 
 type NavIconProps = {
   isOpen: boolean;

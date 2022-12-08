@@ -2,40 +2,30 @@
     height: calc(100vh - 5rem);
     display: grid;
     align-items: center;
-}
-
-@media only screen and (max-height: 36rem) {
-    .content {
+    
+    @media only screen and (max-height: 36rem) {
         height: 100%;
         margin-top: 2rem;
         margin-bottom: 5rem;
     }
-}
-
-@media only screen and (min-width: 62rem) {
-    .content {
+    
+    @media only screen and (min-width: 62rem) {
         margin: 0 auto;
         max-width: 40rem;
     }
-}
-
-@media only screen and (max-height: 36rem) and (min-width: 62rem) {
-    .content {
+    
+    @media only screen and (max-height: 36rem) and (min-width: 62rem) {
         height: 100%;
         margin: 2rem auto 5rem auto;
         max-width: 40rem;
     }
-}
-
-@media only screen and (min-width: 75rem) {
-    .content {
+    
+    @media only screen and (min-width: 75rem) {
         margin: 0 auto;
         max-width: 60rem;
     }
-}
-
-@media only screen and (max-height: 36rem) and (min-width: 75rem) {
-    .content {
+    
+    @media only screen and (max-height: 36rem) and (min-width: 75rem) {
         height: 100%;
         margin: 2rem auto 5rem auto;
         max-width: 60rem;
@@ -59,21 +49,17 @@
     justify-content: flex-start;
     margin-top: 2rem;
     gap: 1rem;
-}
-
-@media only screen and (min-width: 48rem) {
-    .companies {
+    
+    @media only screen and (min-width: 48rem) {
         margin-top: 3rem;
         gap: 2.5rem;
-    }   
+    }
 }
 
 .blockSpacing {
     padding: 8rem 0;
-}
-
-@media only screen and (min-width: 75rem) {
-    .blockSpacing {
+    
+    @media only screen and (min-width: 75rem) {
         padding: 12rem 0;
     }
 }

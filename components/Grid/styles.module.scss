@@ -1,0 +1,11 @@
+.grid {
+    @media only screen and (min-width: 62rem) {
+        margin: 0 auto;
+        max-width: 40rem;
+    }
+    
+    @media only screen and (min-width: 75rem) {
+        margin: 0 auto;
+        max-width: 60rem;
+    }
+}
