@@ -1,0 +1,28 @@
+.nav {
+    display: none;
+}
+
+@media only screen and (min-width: 62rem) {
+    .nav {
+        display: initial;
+    }
+}
+
+.nav ul {
+    display: flex;
+}
+
+.link {
+    color: var(--color-copy);
+    text-decoration: none;
+    display: block;
+    padding: 1rem 1.5rem;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link span {
+    color: var(--color-primary);
+}
