@@ -20,10 +20,10 @@ export default function About() {
           <div className={styles.blockSpacing}>
             <h1>About Me</h1>
             <p className={styles.description}>
-              I&apos;m a self taught Developer based in Manchester, UK. I work
-              building digital products for both businesses and consumer use.
-              I&apos;m confident, naturally curious, and improving on my skills
-              day by day.
+              I&apos;m a Developer based in Manchester, UK. I work building
+              digital products for both businesses and consumer use. I&apos;m
+              confident, naturally curious, and improving on my skills day by
+              day.
             </p>
           </div>
         </Grid>
