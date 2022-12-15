@@ -71,16 +71,25 @@ export async function getStaticProps() {
   const postsDirectory = path.join(process.cwd(), "blog");
   const files = fs.readdirSync(postsDirectory, "utf-8");
 
-  const posts = files.map((filename) => {
-    const slug = filename.replace(".md", "");
-    const readFile = fs.readFileSync(`${postsDirectory}/${filename}`, "utf-8");
-    const { data: frontmatter } = matter(readFile);
+  const posts = files
+    .map((filename) => {
+      const slug = filename.replace(".md", "");
+      const readFile = fs.readFileSync(
+        `${postsDirectory}/${filename}`,
+        "utf-8"
+      );
+      const { data: frontmatter } = matter(readFile);
 
-    return {
-      slug,
-      frontmatter,
-    };
-  });
+      return {
+        slug,
+        frontmatter,
+      };
+    })
+    .sort(
+      (a, b) =>
+        new Date(b.frontmatter.date).getTime() -
+        new Date(a.frontmatter.date).getTime()
+    );
 
   return {
     props: {
