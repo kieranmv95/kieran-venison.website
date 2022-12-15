@@ -4,7 +4,7 @@ date: "2019-03-29T21:30:00.284Z"
 description: If you have read any of my blog posts before you may think this title is a bit weird. It was only a year ago that I did a blog post about attending my first conference. Fast forward one year and I am now talking at the same conference. how in gods name did this happen?
 ---
 
-If you have read any of my blog posts before you may think this title is a bit weird. It was only a year ago that I did a [blog post about attending my first conference](/articles/2018/july/what-my-first-conference-taught-me/). Fast forward one year and I am now talking at the same conference. how in gods name did this happen?
+If you have read any of my blog posts before you may think this title is a bit weird. It was only a year ago that I did a [blog post about attending my first conference](/blog/what-my-first-conference-taught-me/). Fast forward one year and I am now talking at the same conference. how in gods name did this happen?
 
 ## How did this happen
 
@@ -37,7 +37,7 @@ The last talk practice run-through of the day and I went ahead and compiled the 
 
 ## One month remaining
 
-Now is the time where I should say I practised every night for a month and I have memorised every line and it's all running as smoothly as can be.  I can't say that at all, the month before the event I did not have one single practice run. I started working on a project at work and have been pulling long hours for the duration of the month. I simply have not had the time and energy to put into it.
+Now is the time where I should say I practised every night for a month and I have memorised every line and it's all running as smoothly as can be. I can't say that at all, the month before the event I did not have one single practice run. I started working on a project at work and have been pulling long hours for the duration of the month. I simply have not had the time and energy to put into it.
 
 ## The day before
 
@@ -65,6 +65,7 @@ I finished the talk and ended on the resurrection slide and concluded. I got the
 
 Although it was one of the scariest moments of my life, it was amazing. I would do it again.
 However next time I am going to focus a hell of a lot more on planning this shit out, get slides in order and do practice runs. One thing I would recommend is practice:
+
 - practice in front of colleagues
 - practice in front of family
 - practice in front of a god damn mirror

@@ -3,9 +3,25 @@ import Footer from "../../components/Footer";
 import Grid from "../../components/Grid";
 import Header from "../../components/Header";
 import Social from "../../components/Social";
-import styles from "../styles/pages/about.module.scss";
+import styles from "../../styles/pages/blog.module.scss";
 
-export default function Blog() {
+import fs from "fs";
+import matter from "gray-matter";
+import path from "path";
+
+import Link from "next/link";
+import { prettyDate } from "../../helpers/prettyDate";
+
+type Post = {
+  slug: string;
+  frontmatter: {
+    title: string;
+    date: string;
+    description: string;
+  };
+};
+
+export default function Blog({ posts }: { posts: Post[] }) {
   return (
     <>
       <Head>
@@ -31,15 +47,17 @@ export default function Blog() {
                 dev.to
               </a>
             </p>
-          </div>
-        </Grid>
-        <Grid>
-          <div className={styles.blockSpacing}>
-            <h2>Coming Soon</h2>
-            <p>
-              I&apos;m currently finishing development on this page so watch
-              this space
-            </p>
+
+            <ul className={styles.blogPostsList}>
+              {posts.map((post, index) => (
+                <li key={post.slug}>
+                  <Link href={`blog/${post.slug}`}>
+                    <span>{prettyDate(new Date(post.frontmatter.date))}</span>{" "}
+                    {post.frontmatter.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </Grid>
         <Footer />
@@ -47,4 +65,26 @@ export default function Blog() {
       </main>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const postsDirectory = path.join(process.cwd(), "blog");
+  const files = fs.readdirSync(postsDirectory, "utf-8");
+
+  const posts = files.map((filename) => {
+    const slug = filename.replace(".md", "");
+    const readFile = fs.readFileSync(`${postsDirectory}/${filename}`, "utf-8");
+    const { data: frontmatter } = matter(readFile);
+
+    return {
+      slug,
+      frontmatter,
+    };
+  });
+
+  return {
+    props: {
+      posts,
+    },
+  };
 }

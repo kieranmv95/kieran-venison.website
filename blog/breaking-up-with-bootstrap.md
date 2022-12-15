@@ -67,7 +67,7 @@ As a quick example below is the HTML and CSS grid markup to create a very simple
 </div>
 ```
 
-```scss
+```css
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

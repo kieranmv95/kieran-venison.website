@@ -3,6 +3,7 @@ title: What my first conference taught me
 date: "2018-07-25T13:10:00.284Z"
 description: I thought I would write this blog post about why you should go to conferences and how you should go about taking things away from them. After all, if you pay the price for the tickets you want to make sure you egt the most out of it!
 ---
+
 Let's start getting the most out of conferences without missing everything because we are too busy with our heads down, trying to write every word down.
 
 ## Backstory
@@ -23,23 +24,23 @@ I was lucky because the day before the conference I met Stephen Owen, he runs th
 In my UpFront Conf swag bag was a notebook, Ideal.
 
 I made 3 columns with 3 headings:
- - Have a go
- - Get some assistance
- - No idea
 
-
+- Have a go
+- Get some assistance
+- No idea
 
 ## I was ready to take notes. but...
 
 ...people talk fast. **Way to fast**. There is no way I was going to write down everything the talkers were saying.
 So I took this simple approach. When talkers mentioned a topic or showed me something I wanted to do I would jot down a very simple header or note. Just enough so that if I look at it in 2 weeks I would remember what I was writing about. I usually just jotted down the talk description the talkers' name and some of the topics I wanted to look into.
 
-|Have a go|Get some assistance|No idea|
-|---|---|---|
-|Make your site useable without using a mouse|wesbos JS. Spread operator. Async js. Fetch API|@s10wen staticgen. static sites (gatsby hexo)|
-|   |The magic web, cool github project|JS observer API|
-|   |Javascript payment API|CSS Animation performane layers|
-|   |   |Chrome has an fps counter!|
+| Have a go                                    | Get some assistance                             | No idea                                       |
+| -------------------------------------------- | ----------------------------------------------- | --------------------------------------------- |
+| Make your site useable without using a mouse | wesbos JS. Spread operator. Async js. Fetch API | @s10wen staticgen. static sites (gatsby hexo) |
+|                                              | The magic web, cool github project              | JS observer API                               |
+|                                              | Javascript payment API                          | CSS Animation performane layers               |
+|                                              |                                                 | Chrome has an fps counter!                    |
+
 The key trick is throwing these into the columns that you think they belong in. Here is how I broke down the three columns I mentioned earlier.
 
 **Have a go** was something I already knew a fair amount about and I could jump into confidently straight after the conference. This is something you may already be doing but want to try out what the talker was saying.
