@@ -1,21 +1,18 @@
 import Head from "next/head";
 import md from "markdown-it";
+import Prism from "prismjs";
 import Footer from "../../components/Footer";
 import Grid from "../../components/Grid";
 import Header from "../../components/Header";
 import Social from "../../components/Social";
 import { prettyDate } from "../../helpers/prettyDate";
 import styles from "../../styles/pages/blogPost.module.scss";
-
-//import prism js
-import "prismjs";
-
-//prismjs theme
 import "prismjs/themes/prism-tomorrow.css";
 
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
+import { useEffect } from "react";
 
 type Post = {
   frontmatter: {
@@ -27,6 +24,10 @@ type Post = {
 };
 
 export default function BlogPost({ post }: { post: Post }) {
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
+
   return (
     <>
       <Head>
