@@ -1,31 +1,33 @@
+@import "../variables";
+
 .content {
     height: calc(100vh - 5rem);
     display: grid;
     align-items: center;
     
-    @media only screen and (max-height: 36rem) {
+    @media only screen and (max-height: $bp-xs) {
         height: 100%;
         margin-top: 2rem;
         margin-bottom: 5rem;
     }
     
-    @media only screen and (min-width: 62rem) {
+    @media only screen and (min-width: $bp-md) {
         margin: 0 auto;
         max-width: 40rem;
     }
     
-    @media only screen and (max-height: 36rem) and (min-width: 62rem) {
+    @media only screen and (max-height: $bp-xs) and (min-width: $bp-md) {
         height: 100%;
         margin: 2rem auto 5rem auto;
         max-width: 40rem;
     }
     
-    @media only screen and (min-width: 75rem) {
+    @media only screen and (min-width: $bp-lg) {
         margin: 0 auto;
         max-width: 60rem;
     }
     
-    @media only screen and (max-height: 36rem) and (min-width: 75rem) {
+    @media only screen and (max-height: $bp-xs) and (min-width: $bp-lg) {
         height: 100%;
         margin: 2rem auto 5rem auto;
         max-width: 60rem;
@@ -50,7 +52,7 @@
     margin-top: 2rem;
     gap: 1rem;
     
-    @media only screen and (min-width: 48rem) {
+    @media only screen and (min-width: $bp-sm) {
         margin-top: 3rem;
         gap: 2.5rem;
     }
@@ -59,7 +61,7 @@
 .blockSpacing {
     padding: 8rem 0;
     
-    @media only screen and (min-width: 75rem) {
+    @media only screen and (min-width: $bp-lg) {
         padding: 12rem 0;
     }
 }

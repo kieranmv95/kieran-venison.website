@@ -1,3 +1,5 @@
+@import "../variables";
+
 .description {
     margin-top: 1rem;
     width: 100%;
@@ -7,7 +9,7 @@
 .blockSpacing {
     padding: 8rem 0;
     
-    @media only screen and (min-width: 75rem) {
+    @media only screen and (min-width: $bp-lg) {
         padding: 12rem 0;
     }
 }

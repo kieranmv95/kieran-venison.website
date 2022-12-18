@@ -1,7 +1,9 @@
+@import "../variables";
+
 .blockSpacing {
     padding: 8rem 0;
     
-    @media only screen and (min-width: 75rem) {
+    @media only screen and (min-width: $bp-lg) {
         padding: 12rem 0;
     }
 }
@@ -9,7 +11,7 @@
 .postTitle {
     font-size: 2.3rem;
 
-    @media only screen and (min-width: 62rem) {
+    @media only screen and (min-width: $bp-md) {
         font-size: 2.75rem;
     }
 }
@@ -28,7 +30,6 @@
 
 .blogPostContent {
     h1,
-    h2,
     h3,
     h4,
     h5,
@@ -76,12 +77,4 @@
     img {
         max-width: 100%;
     }
-
-    // pre {
-    //     background: white;
-    //     margin-bottom: 1.5rem;
-    //     border-radius: 0.2rem;
-    //     padding: 1rem;
-    //     overflow-y: scroll;
-    // }
 }

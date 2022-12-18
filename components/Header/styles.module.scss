@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .header {
     display: flex;
     align-items: center;
@@ -5,7 +7,7 @@
     height: 5rem;
     position: sticky;
     top: 0;
-    @media only screen and (min-width: 62rem) {
+    @media only screen and (min-width: $bp-md) {
         display: grid;
     }
 }
@@ -23,7 +25,7 @@
     pointer-events: none;
     z-index: 998;
 
-    @media only screen and (min-width: 62rem) {
+    @media only screen and (min-width: $bp-md) {
         position: initial;
         top: initial;
         left: initial;
