@@ -13,6 +13,10 @@ export const Header = () => {
     Router.events.on("routeChangeComplete", () => {
       setIsOpen(false);
     });
+
+    Router.events.on("hashChangeComplete", () => {
+      setIsOpen(false);
+    });
   }, []);
 
   return (
