@@ -4,6 +4,7 @@ import {
   faLinkedinIn,
   faInstagram,
   faDev,
+  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import Grid from "../Grid";
 import styles from "./styles.module.scss";
@@ -13,6 +14,15 @@ const Footer = () => (
     <Grid>
       <p>Designed and built by Kieran Venison</p>
       <ul className={styles.icons}>
+        <li>
+          <a
+            href="https://twitter.com/theliftingdev"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+        </li>
         <li>
           <a
             href="https://github.com/kieranmv95"
