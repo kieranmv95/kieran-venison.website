@@ -48,24 +48,24 @@
       margin-bottom: 1em;
     }
     table th {
-      background: var(--color-primary);
-      color: var(--color-grad-two);
+      background: $color-primary;
+      color: $color-grad-two;
       font-weight: 700;
     }
     table td,
     table th {
       padding: 6px;
-      border: 1px solid var(--color-copy);
+      border: 1px solid $color-copy;
       text-align: left;
       font-size: 100%;
       font: inherit;
       vertical-align: baseline;
     }
     tr:nth-of-type(odd) {
-      background: var(--color-grad-two);
+      background: $color-grad-two;
     }
     tr:nth-of-type(even) {
-      background: lighten(black, 15%);
+      background: lighten($color-bg, 15%);
     }
     ul, p {
         margin-bottom: 1.5rem;

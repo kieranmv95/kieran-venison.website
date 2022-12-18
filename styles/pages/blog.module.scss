@@ -22,12 +22,12 @@
     display: block;
     padding: .25rem 0;
     text-decoration: none;
-    color: var(--color-text);
+    color: $color-copy;
     &:hover {
         text-decoration: underline;
     }
 }
 
 .blogPostsList li a span {
-    color: var(--color-primary);
+    color: $color-primary;
 }

@@ -17,7 +17,7 @@
         content: "";
         width: 0.0625rem;
         height: 6.25rem;
-        background: var(--color-primary);
+        background: $color-primary;
         bottom: 0;
         position: absolute;
         left: calc(50% - 0.03125rem);
@@ -25,11 +25,11 @@
 }
 
 .icons a {
-    color: var(--color-copy);
+    color: $color-copy;
     opacity: .5;
 
     &:hover {
-        color: var(--color-copy);
+        color: $color-copy;
         opacity: 1;
     }
 }

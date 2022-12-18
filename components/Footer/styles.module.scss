@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .footer {
     padding: 7rem 0 2rem 0;
 }
@@ -15,7 +17,7 @@
 }
 
 .icons a svg {
-    color: var(--color-copy);
+    color: $color-copy;
     width: 2rem;
     height: 2rem;
 }

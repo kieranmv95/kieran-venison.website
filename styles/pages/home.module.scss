@@ -35,7 +35,7 @@
 }
 
 .intro {
-    color: var(--color-primary);
+    color: $color-primary;
     margin-bottom: .25rem;
 }
 
@@ -70,7 +70,7 @@
     margin-top: 2rem;
     display: inline-block;
     text-decoration: none; 
-    border: 0.0625rem solid var(--color-primary);
-    color: var(--color-primary);
+    border: 0.0625rem solid $color-primary;
+    color: $color-primary;
     padding: 1rem 2rem;
 }

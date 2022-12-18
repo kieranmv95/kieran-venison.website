@@ -1,15 +1,8 @@
 @import "variables";
 
-:root {
-  --color-grad-one: #14141B;
-  --color-grad-two: #0F0F10;
-  --color-copy: #ECECEC;
-  --color-primary: #69A14E;
-}
-
 body {
-  background: linear-gradient(90deg, var(--color-grad-one) 0%, var(--color-grad-two) 100%);
-  color: var(--color-copy);
+  background: linear-gradient(90deg, $color-grad-one 0%, $color-grad-two 100%);
+  color: $color-copy;
   font-size: 16px;
   line-height: 1.3;
   padding: 0 2rem;
@@ -40,5 +33,5 @@ p {
 }
 
 a {
-  color: var(--color-primary);
+  color: $color-primary;
 }
