@@ -3,7 +3,72 @@ import Footer from "../components/Footer";
 import Grid from "../components/Grid";
 import Header from "../components/Header";
 import Social from "../components/Social";
+import WorkItem from "../components/WorkItem";
 import styles from "../styles/pages/about.module.scss";
+
+type WorkItemType = {
+  company: string;
+  title: string;
+  date: string;
+  text: string;
+};
+
+const workItems: WorkItemType[] = [
+  {
+    company: "Bourne Leisure Ltd",
+    title: "Senior Software Engineer",
+    date: "2022 - Present",
+    text: "At Bourne Leisure, I work on the checkout team where we run an array of AB tests to improve the checkout experience.",
+  },
+  {
+    company: "GymShark",
+    title: "Senior Software Engineer",
+    date: "2021 - 2022",
+    text: "At GymShark I was involved in maintaining the main website and store alongside working in a feature team to continually improve the storefront.",
+  },
+  {
+    company: "Localhost Development",
+    title: "Co-founder",
+    date: "2021 - 2022",
+    text: "I co-founded Localhost Development Ltd in 2021. We are a dev house that builds SaaS products. We built BioShare, the last link you will ever need.",
+  },
+  {
+    company: "Mojo Mortgages",
+    title: "Senior Software Engineer",
+    date: "2021 - 2021",
+    text: "Whilst at mojo mortgages I participated in rebuilding the company-facing website and application form which all of our onboarding customers have to complete. This was done to improve UI/UX and to improve developer quality of life.",
+  },
+  {
+    company: "AND digital",
+    title: "Consultant Product Developer",
+    date: "2019 - 2021",
+    text: "In this role, I worked in a range of languages both backend and front-end. I also worked in a range of businesses and sectors spanning from gambling to healthcare. Here I followed the scrum methodology whilst trying to implement it on the client site and upskill existing staff.",
+  },
+  {
+    company: "Sorted",
+    title: "Frontend developer",
+    date: "2018 - 2019",
+    text: "In this role, I worked using React to build a dashboard-based product. I also used Gatsby to rebuild the company website as a static site.",
+  },
+  {
+    company: "CarFinance 247",
+    title: "Frontend developer",
+    date: "2015 - 2018",
+    text: "In this role, I was responsible for a variety of things. I maintained existing products and build internal and customer-facing solutions. I was responsible for the front end of the CarFinance247 website, the CarFinance 247 app form, the CarFinance 247 members area, the Carcraft website and many internal projects.",
+  },
+  {
+    company: "Diversity Travel",
+    title: "Junior Web Developer",
+    date: "2014 - 2015",
+    text: "In this role, I rebuilt the company intranet from scratch using the WordPress framework. I am also on an ongoing project to improve the SEO of the external website. I have been using mainly PHP, mySQL and Apache, WAMP whilst in this position.",
+  },
+  {
+    company: "Web Applications UK",
+    title: "Apprentice",
+    date: "2013 - 2014",
+    text: "Learning the methods used by the company to create, manage and store web applications Learning to create web applications using HTML, CSS, ASP, C#, SQL, JavaScript and JQuery.",
+  },
+];
 
 export default function About() {
   return (
@@ -21,19 +86,56 @@ export default function About() {
             <h1>About Me</h1>
             <p className={styles.description}>
               I&apos;m a Developer based in Manchester, UK. I work building
-              digital products for both businesses and consumer use. I&apos;m
-              confident, naturally curious, and improving on my skills day by
-              day.
+              digital products for both business and consumer use. I&apos;m
+              confident, naturally curious, and improving my skills day by day.
             </p>
-          </div>
-        </Grid>
-        <Grid>
-          <div className={styles.blockSpacing}>
-            <h2>Coming Soon</h2>
+            <h2>Skills</h2>
             <p>
-              I&apos;m currently finishing development on this page so watch
-              this space
+              My skillset lies predominantly around JavaScript and React. I have
+              a strong understanding of JS and have been writing react
+              applications for the past couple of years.
             </p>
+            <p>
+              My core skills are front-end, with that being said my skills do
+              expand to the full stack side of JavaScript development using AWS,
+              node and typescript to develop API's.
+            </p>
+            <p>
+              I have a strong understanding of HTML, CSS and vanilla JavaScript
+              and have used a range of CSS pre-processors and methodologies in
+              the past. Mainly SASS and the BEM CSS methodology. The core
+              understanding of these technologies allows me to quickly pick up
+              and adapt to most situations and technologies.
+            </p>
+            <h2>Other</h2>
+            <p>
+              At UpFront conference 2019 I Delivered a lightning talk on Node,
+              Express and why projects fail. This talk was a guide on writing
+              your own API's using front end technologies.
+            </p>
+            <h2>Outside the (home) office</h2>
+            <p>
+              Outside the office, I am a fitness fanatic. I love anything and
+              everything fitness. At the moment that looks like CrossFit and
+              Olympic lifting. But it can change at the drop of a hat depending
+              on what I am training for. Currently, I am training for a couple
+              of local gym competitions and the Hyrox fitness competition
+            </p>
+            <p>
+              I&apos;m a new dad, so on top of the fitness and code, I am trying
+              to figure that out too!
+            </p>
+            <p>
+              I like to work on small development projects, to keep current. I
+              usually use the time to upskill on any and every technology from
+              C# to D3.
+            </p>
+            <h2>Career History</h2>
+            <div className={styles.workItemsGrid}>
+              {workItems.map((item) => (
+                <WorkItem {...item} />
+              ))}
+            </div>
           </div>
         </Grid>
         <Footer />
