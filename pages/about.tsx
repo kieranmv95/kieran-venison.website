@@ -98,7 +98,7 @@ export default function About() {
             <p>
               My core skills are front-end, with that being said my skills do
               expand to the full stack side of JavaScript development using AWS,
-              node and typescript to develop API's.
+              node and typescript to develop API&apos;s.
             </p>
             <p>
               I have a strong understanding of HTML, CSS and vanilla JavaScript
@@ -111,7 +111,7 @@ export default function About() {
             <p>
               At UpFront conference 2019 I Delivered a lightning talk on Node,
               Express and why projects fail. This talk was a guide on writing
-              your own API's using front end technologies.
+              your own API&apos;s using front end technologies.
             </p>
             <h2>Outside the (home) office</h2>
             <p>
@@ -133,7 +133,7 @@ export default function About() {
             <h2>Career History</h2>
             <div className={styles.workItemsGrid}>
               {workItems.map((item) => (
-                <WorkItem {...item} />
+                <WorkItem key={item.company} {...item} />
               ))}
             </div>
           </div>
